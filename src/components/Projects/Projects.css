@@ -1,0 +1,73 @@
+.Project-whole{
+    /* background-image: linear-gradient(to bottom, rgb(59,64,74), rgb(241,224,239)); */
+    height: 100vh;
+    border: 0.1px solid rgb(2,8,23);
+    background-color: rgb(2,8,23)   ;
+}
+
+.project-item{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: violet;
+    
+
+}
+.project-item img{
+    background-color: violet;
+
+    border-radius: 50px;
+    width: 60px;
+    padding: 10px;
+    height: 60px;
+    transition-duration: 2s;
+
+}
+.project-item img:hover{
+    background-image: linear-gradient(to right ,rgb(243,151,154),rgb(219,121,222),rgb(118,155,243)) ;
+    transform: rotate(360deg);
+
+}
+
+.project-items{
+    display: flex;
+    margin: 0 auto;
+max-width: 800px;
+padding-top:50px;
+    flex-wrap: wrap;
+}
+
+.project-head{
+    text-align: center;
+    color: white;
+}
+.Progress-main{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+@media (width<800px) {
+    .project-items{
+        padding-top: 100px;
+        margin-top: 80px;
+        justify-content: center;
+        gap: -10px;
+
+        padding: 0px 50px 0px 50px;
+        border: 2px solid;
+    
+    }
+    .project-item img{
+        width: 30px;
+        height: 30px;
+        font-size: 0.5em;
+
+    }
+    .project-item{
+        font-size: 0.5em;
+        width: 130px;
+        height: 110px;
+    }
+    
+}

@@ -1,0 +1,79 @@
+.about-whole{
+    background-color:rgb(2,8,23) ;
+    height: 100vh;
+  
+    border: 2px solid black ;
+    color: white;
+}
+.about-whole h1{
+    text-align: center;
+}
+.about-main{
+    display: flex;
+    justify-content: space-around;
+    height: 620px;
+    padding: 10px;
+
+}
+
+.about-content{
+  
+    /* border: 2px solid; */
+    padding: 20px;
+    /* background-color: black; */
+    padding-top: 100px;
+}
+
+.about-content h3{
+    color:rgb(220,91,164) ;
+
+}
+
+.about-content .learn button{
+    background-color:rgb(220,91,164) ;
+    color: white;
+    border: none;
+    /* background-color:rgb(219,121,222) ; */
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bolder;
+
+}
+.about-content .learn button:hover{
+    background-image: linear-gradient(to right ,rgb(243,151,154),rgb(219,121,222),rgb(118,155,243)) ;
+
+}
+
+.about-image{
+    /* border: 2px solid black; */
+    height: 500px;
+    
+    
+}
+
+.about-image img{
+    height: 590px;
+    animation: about-img 1s ease-in-out 0s 1 normal forwards; /* Improved animation declaration */
+}
+
+@media (width<=900px) {
+    .about-main{
+        flex-direction: column;
+    }
+    .about-image img{
+     height: 205px;
+     
+    }
+    .about-image{
+        text-align: center;
+    }
+}
+
+
+@keyframes about-img {
+    0%{
+        transform: translateX(-300px);
+    }
+    
+}

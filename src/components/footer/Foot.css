@@ -1,0 +1,30 @@
+.foot-main{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(19,25,37);
+    color: white;
+}
+
+
+.foot-contacts h1{
+    color: rgb(238,130,238);
+
+}
+
+.foot-links h1{
+    color: rgb(238,130,238) ;
+}
+
+@media (width<=900px) {  
+    .foot-main{
+        /* flex-direction: column; */
+        text-align: center;
+    }
+}
+
+@media (width<=500px) {
+    .foot-main{
+    flex-direction: column;
+    }
+
+}
